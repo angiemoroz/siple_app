@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+  class UsersController < ApplicationController
   
 
   def show
@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   end
 
    def create
+    puts("IDI V HUJ!!!!!!!!!!!!!!!!!!!!!!!!")
    @user = User.new(user_params)    # Not the final implementation!
     if @user.save
       # Handle a successful save.
